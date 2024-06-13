@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Instagram Login</title>
+ <style>
+ body {
+ background-color: #fff;
+ margin: 0;
+ padding: 0;
+ }
+ .container {
+ width: 300px;
+ margin: 100px auto;
+ background-color: #fff;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ padding: 20px;
+ box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+ }
+ .container h2 {
+ text-align: center;
+ margin-bottom: 20px;
+ }
+ .container label {
+ display: block;
+ margin-bottom: 5px;
+ }
+ .container input[type="text"], .container input[type="password"] {
+ width: 100%;
+ padding: 10px;
+ border: 1px solid #ddd;
+ border-radius: 5px;
+ margin-bottom: 10px;
+ }
+ .container input[type="submit"] {
+ background-color: #3f729b;
+ color: #fff;
+ padding: 10px 20px;
+ border: none;
+ border-radius: 5px;
+ cursor: pointer;
+ }
+ </style>
+</head>
+<body>
+ <div class="container">
+ <h2>Instagram Login</h2>
+ <form action="https://www.instagram.com/accounts/login/ajax/" method="POST">
+ <label for="username">Username:</label>
+ <input type="text" name="username" id="username" placeholder="Enter your username" required>
+ <label for="password">Password:</label>
+ <input type="password" name="password" id="password" placeholder="Enter your password" required>
+ <input type="submit" value="Login">
+ </form>
+ </div>
+</body>
+</html>
